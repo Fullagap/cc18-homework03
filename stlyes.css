@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+  min-height: 700px;
+  min-width: 1000px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: whitesmoke;
+  }
+
+li {
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: aliceblue;
+  }
+
+.taskBar {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.boxes {
+  /* border: 1px solid black; */
+  /* background-color: aquamarine; */
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftbox > * {
+  /* border: 1px solid black; */
+  width: 460px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.rightbox {
+  /* border: 1px solid black; */
+  height: 450px;
+  width: 500px;
+  border-radius: 5%;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.leftbox {
+  height: 500px;
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5%;
+}
+
+.leftbox .up , .leftbox .down {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row ;
+  /* justify-content: space-between; */
+  /* flex-basis: 10% 10% 80%; */
+  align-items: center;
+  height: 250;
+  border-radius: 5%;
+  width: 550px;
+}
+
+.leftbox .up .delete ,.leftbox .down .delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.leftbox .up .mid ,.leftbox .down .mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: skyblue;
+  border-radius: 5%;
+  color: white;
+  margin: 5%;
+  padding: 20px;
+  /* margin-right: 10%; */
+  font-size: 15px;
+}
+
+.leftbox .down .mid {
+  background-color: rgb(248, 153, 118);
+}
+
+.mid .iconBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+  height: 100%;
+  margin: 5px;
+}
+
+.iconBox .icon {
+   margin-left: 5%;
+   color: dodgerblue;
+}
+
+.icon i {
+  border-radius: 10px ;
+  background-color: white;
+  padding: 5%;
+}
+
+.mid .detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+  height: 100%;
+}
+
+.remember {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.rightbox .box {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: left;
+  padding: 5%;
+}
+
+.promotion {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.payment {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.button1 {
+  border: 1px solid aquamarine;
+  color: aquamarine;
+  background-color: white;
+  font-size: 20px;
+  padding: 4px 8px ;
+  border-radius: 5px;
+}
+
+.button2 {
+  background-color:aquamarine;
+  font-size: 20px;
+  padding: 4px 8px ;
+  border-radius: 10px;
+  border: none;
+}
+
+.promotion input[type=promotion] {
+  border: 1px solid grey;
+  width: 250px;
+  font-size: 20px;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.large-icon {
+  size: 20px;
+}
+
+.remember > * , .payment > * {
+  font-size: 20px;
+  color: grey;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  color: gray;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.middleposition {
+  display: flex;
+  flex-direction: row;
+}
+
+.cor {
+  color: aquamarine;
+  font-size: 20px;
+}
